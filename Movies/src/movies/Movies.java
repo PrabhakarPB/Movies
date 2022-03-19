@@ -42,6 +42,7 @@ public class Movies {
                     stmt.setInt(4, year);
                     stmt.setString(5, director);
                     stmt.executeUpdate();
+                    System.out.println("Sucessfully Inserted");
                     break;
 
                 case 2:
@@ -88,6 +89,7 @@ public class Movies {
                     run = false;
                     break;
                 default:
+                     System.out.println("Wrong Choice");
                     break;
             }
         }
